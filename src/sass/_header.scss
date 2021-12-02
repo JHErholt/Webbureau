@@ -1,4 +1,32 @@
 header{
-    min-height: 10vh;
-    box-shadow: 0px 5px black;
+    @extend .flex-group;
+    background-color: darken($clr-neutral, $amount: 5);
+    box-shadow: 0px 2px rgba(14, 10, 67, .1) ;
+    img{
+        height: 75px;
+        padding: $offset-small;
+        display: block;
+    }
+    nav{
+        margin-left: auto;
+        ul{
+            @extend .flex-group;
+            align-items: center;
+            height: 100%;
+            padding-right: $offset-medium;
+            gap: $offset-medium;
+            a{  
+                transition: .5s;
+                color: $clr-secondary;
+                font-size: $font-size-700;
+                &:hover{
+                    color: $clr-primary;
+                    text-decoration: underline;
+                }
+                &:active{
+                    cursor: wait;
+                }
+            }
+        }
+    }
 }
