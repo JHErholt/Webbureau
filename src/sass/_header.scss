@@ -77,7 +77,10 @@ header{
                 font-size: $font-size-400;
             }
         }
-        &:hover .dropdown-content{
+        &:hover .dropdown-content {
+            display: flex;
+        }
+        &:active .dropdown-content{
             display: flex;
         }
     }
@@ -107,8 +110,7 @@ header{
             }
             p{
                 @extend a;
-                cursor: unset;
-                &:hover{
+                &:active{
                     cursor: unset;
                 }
             }
@@ -131,12 +133,17 @@ header{
             .dropdown-content{
                 background-color: darken($clr-neutral, 0);
                 box-shadow: 2px 5px darken($clr-neutral, 10);
+                position: absolute;
+                a{
+                    font-size: $font-size-200;
+                }
             }
         }
         nav{
             display: block;
             margin-left: auto;
             ul {
+                align-items: center;
                 padding: 0 $offset-small 0 0;
                 gap: $offset-small;
                 a{

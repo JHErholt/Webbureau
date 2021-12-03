@@ -25,9 +25,6 @@ function toggleDropdown(x, current) {
         }
     }
     x.classList.toggle("dropdown-active");
-    // let arrow = document.querySelector('')
-
-
 }
 
 // Page Finder
