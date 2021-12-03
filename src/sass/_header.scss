@@ -97,12 +97,9 @@ header{
                 transition: .5s;
                 color: $clr-secondary;
                 font-size: $font-size-400;
-                &:hover{
+                &:active{
                     color: $clr-primary;
                     text-decoration: underline;
-                }
-                &:active{
-                    cursor: wait;
                 }
             }
             p{
@@ -167,6 +164,10 @@ header{
                 gap: $offset-small;
                 a{
                     font-size: $font-size-400;
+                    &:hover{
+                        color: $clr-primary;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
