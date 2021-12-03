@@ -2,8 +2,11 @@
     display: flex;
     flex-direction: column;
 }
-.visible{
+.visible-block{
     display: block;
+}
+.visible-flex{
+    display: flex;
 }
 
 

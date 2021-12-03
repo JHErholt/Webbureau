@@ -39,15 +39,61 @@ header{
         height: 50px;
         padding: $offset-small;
     }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        .dropdown-title{
+            flex-direction: row;
+            p{
+                padding: 0 $offset-x-small;
+                &:first-child{
+                    padding: 0 $offset-x-small 0 0;
+                }
+                &:last-child{
+                    &:hover{
+                        color: unset;
+                        text-decoration: unset
+                    }
+                }
+            }
+        }
+        .dropdown-content{
+            @extend .flex-group;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            display: none;
+            // position: absolute;
+            
+            padding: $offset-small;
+            z-index: 1;
+            a{
+                padding: $offset-x-small 0;
+                &:first-child{
+                    padding-bottom: $offset-x-small;
+                }
+                &:last-child{
+                    padding-top: $offset-x-small;
+                }
+                font-size: $font-size-400;
+            }
+        }
+        &:hover .dropdown-content{
+            display: flex;
+        }
+    }
+    .dropdown-active .dropdown-content{
+        display: flex !important;
+    }
     nav{
         display: none;
         ul{
             @extend .flex-group;
-            align-items: center;
+            // align-items: center;
             height: 100%;
-            padding: $offset-small 0;
+            padding: $offset-small $offset-small;
             gap: $offset-medium;
             a{  
+                cursor: pointer;
                 transition: .5s;
                 color: $clr-secondary;
                 font-size: $font-size-400;
@@ -57,6 +103,13 @@ header{
                 }
                 &:active{
                     cursor: wait;
+                }
+            }
+            p{
+                @extend a;
+                cursor: unset;
+                &:hover{
+                    cursor: unset;
                 }
             }
         }
@@ -74,13 +127,20 @@ header{
         .burger-menu {
             display: none;
         }
+        .dropdown{
+            .dropdown-content{
+                background-color: darken($clr-neutral, 0);
+                box-shadow: 2px 5px darken($clr-neutral, 10);
+            }
+        }
         nav{
             display: block;
             margin-left: auto;
             ul {
                 padding: 0 $offset-small 0 0;
+                gap: $offset-small;
                 a{
-                    font-size: $font-size-500;
+                    font-size: $font-size-300;
                 }
             }
         }
@@ -89,14 +149,15 @@ header{
 @media only screen and (min-width: 992px) {
     header{
         img{
-            height: 75px;
+            height: 50px;
         }
         nav{
             margin-left: auto;
             ul{
                 padding: 0 $offset-medium 0 0;
+                gap: $offset-small;
                 a{
-                    font-size: $font-size-700;
+                    font-size: $font-size-400;
                 }
             }
         }
