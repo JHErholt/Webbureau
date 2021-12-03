@@ -77,9 +77,6 @@ header{
                 font-size: $font-size-400;
             }
         }
-        // &:hover .dropdown-content {
-        //     display: flex;
-        // }
         &:active .dropdown-content{
             display: flex;
         }
@@ -157,6 +154,11 @@ header{
     header{
         img{
             height: 50px;
+        }
+        .dropdown{
+            &:hover .dropdown-content {
+                display: flex;
+            }
         }
         nav{
             margin-left: auto;
