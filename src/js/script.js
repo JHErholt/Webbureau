@@ -6,25 +6,36 @@ function toggleMenuIcon(x) {
     document.querySelector("nav").classList.toggle("visible-block");
     document.querySelector("header").classList.toggle("activated");
 }   
-function toggleDropdown(x, current) {
-    let arrow = document.querySelectorAll('.arrow');
-    let first = arrow[0]
-    let last = arrow[arrow.length- 1]
+function toggleDropdown(current) {
+    let dropdown = document.querySelectorAll('.dropdown')
+    let firstDropdown = dropdown[0]
+    let lastDropdown = dropdown[dropdown.length-1]
 
-    if (x.classList.contains('dropdown-active')){
+    let arrow = document.querySelectorAll('.arrow');
+    let firstArrow = arrow[0];
+    let lastArrow = arrow[arrow.length-1];
+
+    let currentDropdown;
+    if(current == 1){
+        currentDropdown = firstDropdown;
+    }else{
+        currentDropdown = lastDropdown;
+    }
+
+    if (currentDropdown.classList.contains('dropdown-active')){
         if (current == 1){
-            first.innerHTML = '▼'
+            firstArrow.innerHTML = '▼';
         } else {
-            last.innerHTML = '▼'
+            lastArrow.innerHTML = '▼';
         }
     } else {
         if (current == 1){
-            first.innerHTML = '▲'
+            firstArrow.innerHTML = '▲';
         } else {
-            last.innerHTML = '▲'
+            lastArrow.innerHTML = '▲';
         }
     }
-    x.classList.toggle("dropdown-active");
+    currentDropdown.classList.toggle("dropdown-active");
 }
 
 // Page Finder
