@@ -47,7 +47,7 @@ header{
             p{
                 padding: 0 $offset-x-small;
                 &:first-child{
-                    padding: 0 $offset-x-small 0 0;
+                    padding: 0;
                 }
                 &:last-child{
                     &:hover{
@@ -82,7 +82,7 @@ header{
         }
     }
     .dropdown-active .dropdown-content{
-        display: flex !important;
+        display: flex;
     }
     nav{
         display: none;

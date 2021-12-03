@@ -1,3 +1,7 @@
 main{
-    font-family: $font-family-lorem;
+    padding: $offset-large;
+    section{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
