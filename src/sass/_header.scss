@@ -77,9 +77,9 @@ header{
                 font-size: $font-size-400;
             }
         }
-        &:hover .dropdown-content {
-            display: flex;
-        }
+        // &:hover .dropdown-content {
+        //     display: flex;
+        // }
         &:active .dropdown-content{
             display: flex;
         }
