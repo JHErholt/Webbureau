@@ -1,9 +1,17 @@
 main{
+    h1{
+        color: $clr-primary;
+        font-size: $font-size-700;
+    }
+    h2{
+        padding: $offset-x-small 0;
+    }
     .main-container{
         width: 80%;
         margin: 0 auto;
     }
-    h1{
-        font-size: $font-size-700;
+    .main-content{
+        padding: $offset-small 0;
     }
+
 }

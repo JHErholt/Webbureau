@@ -28,6 +28,6 @@
     "sass": "^1.44.0"
   },
   "dependencies": {
-    "node-mandrill": "^1.0.1"
+    "nodemailer": "^6.7.2"
   }
 }

@@ -1,3 +1,4 @@
+
 // Header
 // toggle Burger menu   
 function toggleMenuIcon(x) {
@@ -28,3 +29,30 @@ if (path === '/'){
     link.style.color = 'rgb(178, 34, 34)';
     link.style.textDecoration = 'underline';
 }
+
+
+
+
+// MAIL
+
+
+function sendEmail ( _name, _email, _message) {
+
+}
+// var transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//       user: 'youremail@gmail.com',
+//       pass: 'yourpassword'
+//     }
+//   });
+
+//   console.log(nodemailer)
+
+
+function getValues(){
+    let _name = document.querySelector('#name');
+    let _email = document.querySelector('#email');
+    let _message = document.querySelector('#message');
+    sendEmail(_name, _email, _message);
+};
