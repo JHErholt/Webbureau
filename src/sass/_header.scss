@@ -62,19 +62,17 @@ header{
             flex-direction: column;
             flex-wrap: nowrap;
             display: none;
-            // position: absolute;
-            
             padding: $offset-small;
             z-index: 1;
             a{
                 padding: $offset-x-small 0;
+                font-size: $font-size-400;
                 &:first-child{
                     padding-bottom: $offset-x-small;
                 }
                 &:last-child{
                     padding-top: $offset-x-small;
                 }
-                font-size: $font-size-400;
             }
         }
         &:active .dropdown-content{
@@ -88,7 +86,6 @@ header{
         display: none;
         ul{
             @extend .flex-group;
-            // align-items: center;
             height: 100%;
             padding: $offset-small $offset-small;
             gap: $offset-medium;
@@ -120,9 +117,6 @@ header{
 }
 @media only screen and (min-width: 767px) {
     header{
-        .burger-menu {
-            display: none;
-        }
         .dropdown{
             .dropdown-content{
                 background-color: darken($clr-neutral, 0);
@@ -134,14 +128,12 @@ header{
             }
         }
         nav{
-            display: block;
-            margin-left: auto;
             ul {
                 align-items: center;
-                padding: 0 $offset-small 0 0;
+                padding: $offset-small;
                 gap: $offset-small;
                 a{
-                    font-size: $font-size-300;
+                    font-size: $font-size-400;
                 }
             }
         }
@@ -149,6 +141,9 @@ header{
 }
 @media only screen and (min-width: 992px) {
     header{
+        .burger-menu {
+            display: none;
+        }
         img{
             height: 50px;
         }
@@ -158,6 +153,7 @@ header{
             }
         }
         nav{
+            display: block;
             margin-left: auto;
             ul{
                 padding: 0 $offset-medium 0 0;

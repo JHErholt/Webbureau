@@ -8,15 +8,21 @@
 .visible-flex{
     display: flex;
 }
-
+.padding-large{
+    padding: $offset-large;
+}
+.half-width{
+    width: 50%;
+}
 
 
 @media only screen and (min-width: 768px) {
+    
+}
+@media only screen and (min-width: 992px) {
     .flex-group{
         flex-direction: row;
     }
-}
-@media only screen and (min-width: 992px) {
 }
 @media only screen and (min-width: 1200px) {
     

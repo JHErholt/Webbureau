@@ -1,7 +1,9 @@
 main{
-    padding: $offset-large;
-    section{
+    .main-container{
         width: 80%;
         margin: 0 auto;
+    }
+    h1{
+        font-size: $font-size-700;
     }
 }
