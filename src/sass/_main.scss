@@ -3,15 +3,44 @@ main{
         color: $clr-primary;
         font-size: $font-size-700;
     }
+    .subheading{
+        font-size: $font-size-200;
+    }
     h2{
         padding: $offset-x-small 0;
     }
+    p, b{
+        line-height: $offset-small;
+    }
     .main-container{
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
     }
     .main-content{
         padding: $offset-small 0;
     }
-
-}
+    .center-content{
+        display: flex;
+        justify-content: center;
+    }
+    input, textarea{
+        padding:0 $offset-x-small $offset-x-small 0;
+    }
+    label, input, textarea{
+        display: inline-block;
+        margin-bottom: $offset-x-small;
+    }
+    input[type=submit]{
+        padding: $offset-x-small;
+        border-radius: $offset-medium;
+        border: 0;
+        color: $clr-neutral;
+        background-color: $clr-primary;
+        cursor: pointer;
+        transition: .1s;
+        &:hover{
+            background-color: darken($clr-primary, 5);
+            color: darken($clr-neutral, 5);
+        }
+    }
+}   

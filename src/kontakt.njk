@@ -5,26 +5,30 @@ layout: 'base.njk'
 <div class="padding-large">
     <div class="main-container">
         <h1>Kontakt</h1>
-        <p class="lorem">Ønsker du at komme i kontakt.</p>
+        <b class="subheading">Ønsker du at komme i kontakt.</b>
         <div class="flex-group main-content">
             <div class="half-width">
-                <h2>Praktisk info</h2>
-                <b>Recover</b>
-                <p>Marbæk Allé 9</p>
-                <p>30319685</p>
-                <P>jacob@erholt.dk</P>
+                <div>
+                    <h2>Praktisk info</h2>
+                    <b>Recover</b>
+                    <p>Marbæk Allé 9</p>
+                    <p>30319685</p>
+                    <P>jacob@erholt.dk</P>
+                </div>
             </div>
-            <div class="half-width">
-                <h2>Send os en besked</h2>
-                <form action="javascript:getValues()">
-                    <label for="name">Navn</label >
-                    <input id="name" type="text" required placeholder="Navn">
-                    <label for="email">Email</label>
-                    <input id="email" type="text" required placeholder="Email">
-                    <label for="message">Besked</label>
-                    <textarea id="message" rows="5" cols="25" required placeholder="Dette er en test"></textarea>
-                    <input type="submit" value="Submit">
-                </form>
+            <div class="half-width center-content">
+                <div>
+                    <h2>Send os en besked</h2>
+                    <form action="javascript:getValues()">
+                        <label for="name">Navn<abbr title="påkrævet">*</abbr></label ><br>
+                        <input id="name" type="text" required placeholder="Navn"><br>
+                        <label for="email">Email<abbr title="påkrævet">*</abbr></label><br>
+                        <input id="email" type="text" required placeholder="Email"><br>
+                        <label for="message">Besked<abbr title="påkrævet">*</abbr></label><br>
+                        <textarea id="message" rows="5" cols="25" required placeholder="Dette er en test"></textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
             </div>
         </div>
         

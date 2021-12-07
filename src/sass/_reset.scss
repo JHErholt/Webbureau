@@ -25,3 +25,9 @@ a{
 li{
     list-style: none;
 }
+abbr{
+    text-decoration: none;
+    color: $clr-primary;
+    font-weight: 600;
+    transition: 0s;
+}

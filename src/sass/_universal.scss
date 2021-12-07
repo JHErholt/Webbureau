@@ -14,8 +14,16 @@
 .half-width{
     width: 50%;
 }
-
-
+.center-horizontal{
+    text-align: center;
+}
+.block{
+    display: block;
+}
+.center-content{
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (min-width: 768px) {
     
 }
