@@ -29,6 +29,7 @@
     "sparkpost": "^2.1.4"
   },
   "dependencies": {
+    "netlify-cli": "^8.0.19",
     "sendmail": "^1.6.1"
   }
 }

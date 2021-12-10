@@ -15,42 +15,42 @@
     </div>
     <nav>
         <ul>
-            <li><a href="/cases/">Cases</a></li>
+            <li><a class="{{ 'link-active' if '/cases' in page.url }}" href="/cases">Cases</a></li>
             <li>
                 <div class="dropdown">
                     <div class="flex-group dropdown-title"onclick="toggleDropdown(1)">
-                        <p>Web optimering </p>
+                        <p class="{{ 'link-active' if '/seo'  in page.url or '/medie-optimering' in page.url or '/web-optimering' in page.url}}">Web optimering </p>
                         <p class="arrow">▼</p>
                     </div>
                     <div class="dropdown-content">
-                        <a href="/seo/">SEO</a>
-                        <a href="/medie-optimering">Medie optimering</a>
-                        <a href="/web-optimering/">Web opdatering</a>
+                        <a class="{{ 'link-active' if '/seo' in page.url }}" href="/seo">SEO</a>
+                        <a class="{{ 'link-active' if '/medie-optimering' in page.url }}" href="/medie-optimering">Medie optimering</a>
+                        <a class="{{ 'link-active' if '/web-optimering' in page.url }}" href="/web-optimering">Web opdatering</a>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="dropdown">
                     <div class="flex-group dropdown-title"onclick="toggleDropdown(2)">
-                        <p>Webløsning</p>
+                        <p <a class="{{ 'link-active' if '/hjemmeside' in page.url or '/foto-og-video' in page.url }}">Webløsning</p>
                         <p class="arrow">▼</p>
                     </div>
                     <div class="dropdown-content">
-                        <a href="/hjemmeside/">Hjemmeside</a>
-                        <a href="/foto-og-video/">Foto & video</a>
+                        <a class="{{ 'link-active' if '/hjemmeside' in page.url }}" href="/hjemmeside">Hjemmeside</a>
+                        <a class="{{ 'link-active' if '/foto-og-video' in page.url }}" href="/foto-og-video">Foto & video</a>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="dropdown">
                     <div class="flex-group dropdown-title"onclick="toggleDropdown(3)">
-                        <p>Om os</p>
+                        <p class="{{ 'link-active' if '/teamet' in page.url or '/blog' in page.url or '/kontakt' in page.url }}">Om os</p>
                         <p class="arrow">▼</p>
                     </div>
                     <div class="dropdown-content">
-                        <a href="/teamet/">Teamet</a>
-                        <a href="/blog/">Blog</a>
-                        <a href="/kontakt/">Kontakt</a>
+                        <a class="{{ 'link-active' if '/teamet' in page.url }}" href="/teamet">Teamet</a>
+                        <a class="{{ 'link-active' if '/blog' in page.url }}" href="/blog">Blog</a>
+                        <a class="{{ 'link-active' if '/kontakt' in page.url }}" href="/kontakt">Kontakt</a>
                     </div>
                 </div>
             </li>

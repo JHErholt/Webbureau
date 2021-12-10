@@ -1,3 +1,7 @@
+.link-active{
+    text-decoration: underline !important;
+    color: $clr-primary !important;
+}
 .flex-group{
     display: flex;
     flex-direction: column;
