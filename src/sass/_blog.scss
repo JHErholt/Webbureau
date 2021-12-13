@@ -1,0 +1,35 @@
+.snippet-container{
+    padding: $offset-medium;
+    margin: $offset-large $offset-medium;
+    border-left: $clr-secondary solid 15px;
+    border-radius: 30px;
+    a{
+        color: $clr-secondary;
+        transition: .3s;
+        &:hover{
+            color: $clr-primary;
+        }
+    }
+    h1{
+        padding: $offset-small 0;
+    }
+    .snippet-title{
+        color: $clr-primary;
+        transition: .3s;
+        &:hover{
+            color: darken($clr-primary, 5);
+        }
+    }
+    .read-more{
+        text-decoration: underline;
+    }
+}
+.snippet-author-container{
+    @extend .flex-group
+}
+.snippet-image{
+    width: 50px;
+}
+.snippet-author{
+    padding-left: $offset-x-small;
+}

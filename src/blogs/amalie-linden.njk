@@ -1,13 +1,12 @@
 ---
-title: Blog
 layout: 'base.njk'
 ---
 <section class="section-offset">
     <div class="main-container">
-        <h1>Blog</h1>
+        <h1>Amalie Linden's blog</h1>
         <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita eum sed.</p>
         <ul>
-            {%- for blog in collections.blog -%}
+            {%- for blog in collections.amalielinden -%}
                 {% include "blog-snippet.njk" %}
             {%- endfor -%}
         </ul>
