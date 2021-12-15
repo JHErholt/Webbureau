@@ -1,6 +1,6 @@
 ---
 title: Min første blog
-authorImage: ../../assets/blog/author_jacob_erholt.png
+authorImage: ../../assets/author/author_jacob_erholt.png
 authorImageAlt: Man in white shirt, red background
 author: Jacob Erholt
 authorLink: /blogs/jacob-erholt

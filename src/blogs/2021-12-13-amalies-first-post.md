@@ -1,6 +1,6 @@
 ---
 title: Amalie's første blog
-authorImage: ../../assets/blog/author_amalie_linden.png
+authorImage: ../../assets/author/author_amalie_linden.png
 authorImageAlt: Woman, forehead, red backround
 author: Amalie Lindén
 authorLink: /blogs/amalie-linden

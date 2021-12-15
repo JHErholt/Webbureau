@@ -15,16 +15,10 @@ layout: 'base.njk'
 </section>
 <section class="section-offset">
     <div class="fullwidth-container">
-        <h2>Test2</h2>
-    </div>
-</section>
-<section class="section-offset background-1">
-    <div class="fullwidth-container">
-        <h2>Test3</h2>
-    </div>
-</section>
-<section class="section-offset">
-    <div class="fullwidth-container">
-        <h2>Test2</h2>
+    <ul class="team_snippet-container">
+        {%- for blog in collections.teamMember -%}
+            {% include "team-snippet.njk" %}
+        {%- endfor -%}
+    </ul>
     </div>
 </section>
