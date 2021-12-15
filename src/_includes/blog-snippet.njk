@@ -1,11 +1,11 @@
 <li class="snippet-container background-1">
     <div class="snippet-meta">
         <div class="snippet-author-container">
-            <a href="{{ blog.data.authorLink }}"><img class="snippet-image" src="{{ blog.data.authorImage }}" title="{{ blog.data.authorImageAlt }}" alt="{{ blog.data.authorImageAlt}}"></a>
-            <h2 class="snippet-author"><a class="author" href="{{ blog.data.authorLink }}">{{ blog.data.author }}</a> - <a href="#">{{ blog.date | postDate }}</a></h2>
+            <a href="{{ blogs.data.authorLink }}"><img class="snippet-image" src="{{ blogs.data.authorImage }}" title="{{ blogs.data.authorImageAlt }}" alt="{{ blogs.data.authorImageAlt}}"></a>
+            <h2 class="snippet-author"><a class="author" href="{{ blogs.data.authorLink }}">{{ blogs.data.author }}</a> - <a href="#">{{ blogs.date | postDate }}</a></h2>
         </div>
     </div>
-    <h1><a class="snippet-title" href="{{ blog.url }}">{{ blog.data.title }}</a></h1>
-    <p>{{ blog.data.content }}</p><br>
-    <a class="read-more" href="{{ blog.url }}">Læs mere</a>
+    <h1><a class="snippet-title" href="{{ blogs.url }}">{{ blogs.data.title }}</a></h1>
+    <p>{{ blogs.data.content }}</p><br>
+    <a class="read-more" href="{{ blogs.url }}">Læs mere</a>
 </li>

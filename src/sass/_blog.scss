@@ -1,16 +1,12 @@
 .snippet-container{
+    @extend .link;
     padding: $offset-medium;
     margin: $offset-large $offset-medium;
     border-left: $clr-secondary solid 15px;
     border-radius: 30px;
-    a{
-        color: $clr-secondary;
-        transition: .3s;
-        &:hover{
-            color: $clr-primary;
-        }
-    }
+
     h1{
+        font-size: $font-size-700;
         padding: $offset-small 0;
     }
     .snippet-title{

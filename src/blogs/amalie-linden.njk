@@ -6,9 +6,15 @@ layout: 'base.njk'
         <h1>Amalie Linden's blog</h1>
         <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita eum sed.</p>
         <ul>
-            {%- for blog in collections.amalielinden -%}
-                {% include "blog-snippet.njk" %}
-            {%- endfor -%}
+            {% if collections.amalielinden | length <= 0 %}
+                {%- for blogs in collections.noContent -%}
+                    {% include "no-content.njk" %} 
+                {%- endfor -%}
+            {% else %}
+                {%- for blogs in collections.amalielinden | reverse -%}
+                    {% include "blog-snippet.njk" %}
+                {%- endfor -%}
+            {% endif %}
         </ul>
     </div>
 </section>

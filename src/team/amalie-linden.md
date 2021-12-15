@@ -1,7 +1,8 @@
 ---
 name: Amalie Lindén
-role: Grammar Nazi, Professionel rettnings godkender
+role: Designer, Professionel rettnings godkender, tekstforfatter
 age: 19
-image: ../../assets/author/author_amalie_linden.png
+link: /blogs/amalie-linden
+image: ../../assets/team/amalie_linden.png
 imageAlt: Woman, forehead, red background
 ---

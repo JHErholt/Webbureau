@@ -2,18 +2,21 @@
 title: Teamet
 layout: 'base.njk'
 ---
-<section class="section-offset">
+<section class="offset">
     <div class="center-container">
-        <h1>Teamet</h1>
-        <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae eos velit quae maxime rem id provident facere enim vitae corrupti.</p>
+        <h1 class="heading">Vores fantastisk team</h1>
+        <b class="subheading">De skarpe hjerner bag alle projekterne.</b>
     </div>
 </section>
-<section class="section-offset background-1">
-    <div class="fullwidth-container">
-        <h2>Test1</h2>
+<section class="less background-1">
+    <div class="offset">
+        <div class="center-container">
+            <h2>Om os</h2>
+            <p>Vi er et dedikeret team, som stræber efter at levere det bedste kvalitet specielt til dig.</p>
+        </div>
     </div>
 </section>
-<section class="section-offset">
+<section class="offset">
     <div class="fullwidth-container">
     <ul class="team_snippet-container">
         {%- for blog in collections.teamMember -%}

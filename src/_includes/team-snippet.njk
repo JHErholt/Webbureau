@@ -1,7 +1,7 @@
 <li class="team-snippet background-1">
-    <img src="{{ blog.data.image }}" title="{{ blog.data.imageAlt }}" alt="{{ blog.data.imageAlt }}">
-    <div>
-        <h1>{{ blog.data.name }} - {{ blog.data.age}} år</h1>
+    <a href="{{ blog.data.link }}"><img src="{{ blog.data.image }}" alt="{{ blog.data.imageAlt }}"></a>
+    <div class="team_snippet-data">
+        <h1><a href="{{ blog.data.link }}">{{ blog.data.name }}</a> - {{ blog.data.age}} år</h1>
         <h2>{{ blog.data.role }}</h2>
     </div>
 </li>

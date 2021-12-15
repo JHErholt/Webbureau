@@ -1,0 +1,27 @@
+.team_snippet-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $offset-medium;
+}
+.team-snippet{
+    border-radius: 50px 50px 0 0 ;
+    flex: 0 0 33.33%;
+    text-align: center;
+    h1{
+        font-size: $font-size-700;
+    }
+    a{
+        color: $clr-primary;
+        transition: .3s;
+        &:hover{
+            color: $clr-secondary;
+        }
+    }
+    img{
+        border-radius: 50px 50px 0 0;
+        width: 100%;
+    }
+    .team_snippet-data{
+        padding: $offset-medium $offset-medium;
+    }
+}

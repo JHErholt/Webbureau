@@ -2,6 +2,7 @@
 name: Molly Molsen
 role: Teamets cutiepie, professionel tapdancer, spirit generator 
 age: 7
-image: ../../assets/author/author_amalie_linden.png
-imageAlt: Woman, forehead, red background
+link: /blogs/molly-molsen
+image: ../../assets/team/molly_molsen.png
+imageAlt: Dog, red background
 ---

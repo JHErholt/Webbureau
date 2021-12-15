@@ -2,6 +2,35 @@
     text-decoration: underline !important;
     color: $clr-primary !important;
 }
+.link{
+    a{
+        color: $clr-secondary;
+        transition: .3s;
+        &:hover{
+            color: $clr-primary;
+        }
+    }
+}
+
+.offset{
+    padding: $offset-large;
+}
+.less{
+    .offset{
+        padding: $offset-medium;
+    }
+}
+.lesser{
+    .offset{
+        padding: $offset-small;
+    }
+}
+.least{
+    .offset{
+        padding: $offset-x-small;
+    }
+}
+
 .flex-group{
     display: flex;
     flex-direction: column;

@@ -1,7 +1,8 @@
 ---
 name: Emma
-role: Teamets primadonna
+role: Teamets primadonna, Recovered Maskot
 age: 9
-image: ../../assets/author/author_amalie_linden.png
-imageAlt: Woman, forehead, red background
+link: /blogs/emma
+image: ../../assets/team/emma.png
+imageAlt: Dog, red background
 ---

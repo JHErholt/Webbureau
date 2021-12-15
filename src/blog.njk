@@ -2,14 +2,20 @@
 title: Blog
 layout: 'base.njk'
 ---
-<section class="section-offset">
+<section class="offset">
     <div class="center-container">
-        <h1>Blog</h1>
-        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita eum sed.</p>
+        <h1 class="heading">Blog</h1>
+        <b class="subheading">Følg med i vores hverdag.</b>
         <ul>
-            {%- for blog in collections.blog -%}
-                {% include "blog-snippet.njk" %}
-            {%- endfor -%}
+            {% if collections.allBlogs | length <= 0 %}
+                {%- for blogs in collections.noContent -%}
+                    {% include "no-content.njk" %} 
+                {%- endfor -%}
+            {% else %}
+                {%- for blogs in collections.allBlogs | reverse -%}
+                    {% include "blog-snippet.njk" %}
+                {%- endfor -%}
+            {% endif %}
         </ul>
     </div>
 </section>

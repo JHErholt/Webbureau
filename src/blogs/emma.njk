@@ -3,15 +3,15 @@ layout: 'base.njk'
 ---
 <section class="section-offset">
     <div class="main-container">
-        <h1>Jacob Erholt's blog</h1>
+        <h1>Emma's blog</h1>
         <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita eum sed.</p>
         <ul>
-            {% if collections.jacoberholt | length <= 0 %}
+            {% if collections.emma| length <= 0 %}
                 {%- for blogs in collections.noContent -%}
                     {% include "no-content.njk" %} 
                 {%- endfor -%}
             {% else %}
-                {%- for blogs in collections.jacoberholt | reverse -%}
+                {%- for blogs in collections.allBlogs | reverse -%}
                     {% include "blog-snippet.njk" %}
                 {%- endfor -%}
             {% endif %}
