@@ -1,4 +1,4 @@
 {
-    "layout": "team-post.njk",
+    "layout": "empty.njk",
     "tags": "teamMember"
 }
