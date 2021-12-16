@@ -1,0 +1,20 @@
+---
+layout: 'base.njk'
+---
+<section class="offset">
+    <div class="main-container">
+        <h1>Fie's blog</h1>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita eum sed.</p>
+        <ul>
+            {% if collections.emma| length <= 0 %}
+                {%- for blogs in collections.noContent -%}
+                    {% include "no-content.njk" %} 
+                {%- endfor -%}
+            {% else %}
+                {%- for blogs in collections.allBlogs | reverse -%}
+                    {% include "blog-snippet.njk" %}
+                {%- endfor -%}
+            {% endif %}
+        </ul>
+    </div>
+</section>
