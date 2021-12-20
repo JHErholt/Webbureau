@@ -6,7 +6,7 @@ layout: 'base.njk'
         <h1>Fie's blog</h1>
         <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita eum sed.</p>
         <ul>
-            {% if collections.emma| length <= 0 %}
+            {% if collections.fie| length <= 0 %}
                 {%- for blogs in collections.noContent -%}
                     {% include "no-content.njk" %} 
                 {%- endfor -%}
