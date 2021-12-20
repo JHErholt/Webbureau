@@ -35,6 +35,13 @@
     display: flex;
     flex-direction: column;
 }
+.flex-text{
+    @extend .flex-group;
+    b{
+        padding: $offset-small;
+        width: 25%;
+    }
+}
 .visible-block{
     display: block;
 }
