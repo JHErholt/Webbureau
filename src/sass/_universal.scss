@@ -34,6 +34,19 @@
 .flex-group{
     display: flex;
     flex-direction: column;
+    .text-container{
+        width: 60%;
+    }
+    .image-container{
+        width: 40%;
+    }
+}
+.flex-text{
+    @extend .flex-group;
+    b{
+        padding: $offset-small;
+        width: 25%;
+    }
 }
 .visible-block{
     display: block;

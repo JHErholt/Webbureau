@@ -49,4 +49,17 @@ main{
             color: darken($clr-neutral, 5);
         }
     }
+    .content-container{
+        @extend .flex-group;
+    }
+    .text-container{
+        padding: $offset-small;
+    }
+    .image-container{
+        padding: $offset-small;
+        img{
+            height: 500px;
+            width: 100%;
+        }
+    }
 }   
