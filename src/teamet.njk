@@ -2,27 +2,28 @@
 title: Teamet
 layout: 'base.njk'
 ---
-<section class="offset">
-    <div class="center-container">
-        <h1 class="heading">Vores fantastisk team</h1>
-        <b class="subheading">De skarpe hjerner bag alle projekterne.</b>
-    </div>
-</section>
-<section class="less background-1">
-    <div class="offset">
-        <div class="center-container center-text">
-            <h2 >Om os</h2>
-            <p>Vi er et dedikeret team, som stræber efter at levere det bedste kvalitet specielt til dig.</p>
-            <p></p>
+<section>
+    <article class="offset">
+        <div class="center-container">
+            <h1 class="heading">Vores fantastisk team</h1>
+            <b class="subheading">De skarpe hjerner bag alle projekterne.</b>
         </div>
-    </div>
-</section>
-<section class="member-container">
-    <div class="fullwidth-container">
-    <ul class="team_snippet-container">
-        {%- for blog in collections.teamMember -%}
-            {% include "team-snippet.njk" %}
-        {%- endfor -%}
-    </ul>
-    </div>
+    </article>
+    <article class="less background-1">
+        <div class="offset">
+            <div class="center-container center-text">
+                <h2 >Om os</h2>
+                <p>Vi er et dedikeret team, som stræber efter at levere det bedste kvalitet specielt til dig.</p>
+            </div>
+        </div>
+    </article>
+    <article class="member-container">
+        <div class="fullwidth-container">
+        <ul class="team_snippet-container">
+            {%- for blog in collections.teamMember -%}
+                {% include "team-snippet.njk" %}
+            {%- endfor -%}
+        </ul>
+        </div>
+    </article>
 </section>
