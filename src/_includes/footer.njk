@@ -23,6 +23,15 @@ Link med undersider
                 <a href="mailto:hej.recovered@gmail.com">hej.recovered@gmail.com</P>
             </div>
             <div class="flex-item">
+                <h2>Webløsning</h2>
+                <ul>
+                    <li><a class="{{ 'link-active' if '/hjemmeside' in page.url }}" href="/hjemmeside">Hjemmeside</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">
                 <h2>Web optimering</h2>
                 <ul>
                     <li><a class="{{ 'link-active' if '/seo' in page.url }}" href="/seo">SEO</a></li>
@@ -32,21 +41,12 @@ Link med undersider
                             optimering</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="flex-container">
-            <div class="flex-item">
-                <h2>Webløsning</h2>
-                <ul>
-                    <li><a class="{{ 'link-active' if '/hjemmeside' in page.url }}" href="/hjemmeside">Hjemmeside</a>
-                    </li>
-                </ul>
-            </div>
             <div class="flex-item">
                 <h2>Om Os</h2>
                 <ul>
                     <li><a class="{{ 'link-active' if '/teamet' in page.url }}" href="/teamet">Teamet</a></li>
                     <li><a class="{{ 'link-active' if '/blog' in page.url }}" href="/blog">Blog</a></li>
-                    <li><a class="{{ 'link-active' if '/kontakt' in page.url }}" href="/kontakt">Kontakt</a></li>
+                    <li><a class="{{ 'link-active' if '/kontakt' in page.url }}" target="_top" href="/kontakt">Kontakt</a></li>
                 </ul>
             </div>
         </div>
