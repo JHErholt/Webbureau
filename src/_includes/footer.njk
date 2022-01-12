@@ -1,4 +1,4 @@
-{# 
+{#
 Footer
 
 Recover (navn)
@@ -11,42 +11,49 @@ Link med undersider
 
 Årstal copyright Recover
 
- #}
+#}
 
 <footer class="background-1">
     <div class="container">
-        <div class="flex-item">
-            <h1>Recovered</h1>
-            <p>Marbæk Allé 9</p>
-            <p>30319685</p>
-            <a href="mailto:hej.recovered@gmail.com">hej.recovered@gmail.com</P>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h1>Recovered</h1>
+                <p>Marbæk Allé 9</p>
+                <p>30319685</p>
+                <a href="mailto:hej.recovered@gmail.com">hej.recovered@gmail.com</P>
+            </div>
+            <div class="flex-item">
+                <h2>Web optimering</h2>
+                <ul>
+                    <li><a class="{{ 'link-active' if '/seo' in page.url }}" href="/seo">SEO</a></li>
+                    <li><a class="{{ 'link-active' if '/medie-optimering' in page.url }}" href="/medie-optimering">Medie
+                            optimering</a></li>
+                    <li><a class="{{ 'link-active' if '/web-optimering' in page.url }}" href="/web-optimering">Web
+                            optimering</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="flex-item">
-            <h2>Web optimering</h2>
-            <ul>
-                <li><a class="{{ 'link-active' if '/seo' in page.url }}" href="/seo">SEO</a></li>
-                <li><a class="{{ 'link-active' if '/medie-optimering' in page.url }}" href="/medie-optimering">Medie optimering</a></li>
-                <li><a class="{{ 'link-active' if '/web-optimering' in page.url }}" href="/web-optimering">Web optimering</a></li>
-            </ul>
-        </div>
-        <div class="flex-item">
-            <h2>Webløsning</h2>
-            <ul>
-                <li><a class="{{ 'link-active' if '/hjemmeside' in page.url }}" href="/hjemmeside">Hjemmeside</a></li>
-            </ul>
-        </div>
-        <div class="flex-item">
-            <h2>Om Os</h2>
-            <ul>
-                <li><a class="{{ 'link-active' if '/teamet' in page.url }}" href="/teamet">Teamet</a></li>
-                <li><a class="{{ 'link-active' if '/blog' in page.url }}" href="/blog">Blog</a></li>
-                <li><a class="{{ 'link-active' if '/kontakt' in page.url }}" href="/kontakt">Kontakt</a></li>
-            </ul>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>Webløsning</h2>
+                <ul>
+                    <li><a class="{{ 'link-active' if '/hjemmeside' in page.url }}" href="/hjemmeside">Hjemmeside</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-item">
+                <h2>Om Os</h2>
+                <ul>
+                    <li><a class="{{ 'link-active' if '/teamet' in page.url }}" href="/teamet">Teamet</a></li>
+                    <li><a class="{{ 'link-active' if '/blog' in page.url }}" href="/blog">Blog</a></li>
+                    <li><a class="{{ 'link-active' if '/kontakt' in page.url }}" href="/kontakt">Kontakt</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="copyright"></div>
     <script>
-         const d = new Date();
+        const d = new Date();
         const y = d.getFullYear();
         var copyright = document.querySelector('.copyright');
         var copyrightText = document.createElement('p');
@@ -54,3 +61,4 @@ Link med undersider
         copyright.appendChild(copyrightText);
     </script>
 </footer>
+{# TESTER #}
