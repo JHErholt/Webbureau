@@ -11,22 +11,42 @@ footer{
             padding-top: $offset-x-small;
             font-size: $font-size-100;
         }
-        .flex-item{
-            padding-bottom: $offset-small;
-            text-align: center
+        .flex-container{
+            @extend .flex-group;
+            width: 100%;
+            flex-direction: column;
+            .flex-item{
+                padding-bottom: $offset-small;
+                text-align: center
+            }
         }
+        
     }
     .copyright{
         text-align: center;
         color: darken($clr-neutral, 35);
     }
 }
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (min-width: 767px) {
+    footer{
+        .container{
+            .flex-container{
+                width: 100%;
+                flex-direction: row;
+                .flex-item{
+                    width: 50%;     
+                }
+            }
+        }
+    }
 }
 @media only screen and (min-width: 992px) {
-    .flex-item{
-        width: 25%;     
+    footer{
+        .container{
+            .flex-container{
+                width: 50%;
+            }
+        }
     }
 }
 @media only screen and (min-width: 1200px) {
