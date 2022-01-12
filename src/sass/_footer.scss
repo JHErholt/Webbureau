@@ -12,7 +12,7 @@ footer{
             font-size: $font-size-100;
         }
         .flex-item{
-            width: 25%;
+            padding-bottom: $offset-small;
             text-align: center
         }
     }
@@ -20,4 +20,15 @@ footer{
         text-align: center;
         color: darken($clr-neutral, 35);
     }
+}
+@media only screen and (min-width: 768px) {
+    
+}
+@media only screen and (min-width: 992px) {
+    .flex-item{
+        width: 25%;     
+    }
+}
+@media only screen and (min-width: 1200px) {
+    
 }
