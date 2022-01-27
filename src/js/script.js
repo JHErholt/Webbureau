@@ -34,4 +34,4 @@ function toggleDropdown(current) {
 //     let _email = document.querySelector('#email');
 //     let _message = document.querySelector('#message');
 //     sendEmail(_name, _email, _message);
-// };n
+// };
