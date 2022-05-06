@@ -1,0 +1,40 @@
+/* 
+<button class="btn btn--primary btn--square">Click me</button>
+<button class="btn btn--danger btn--square">Click me</button>
+*/ 
+
+.btn{
+    color: white;
+    padding: 1rem 2rem;
+    transition: .4s;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    
+    &--square{
+        border-radius: 0;
+    }
+    &--primary{
+        color: $clr-primary;
+        border: solid 2px $clr-primary;
+        &:hover{
+            color: white;
+            background-color: $clr-primary;
+        }
+    }
+    &--secondary{
+        color: $clr-secondary;
+        border: solid 2px $clr-secondary;
+        &:hover{
+            color: white;
+            background-color: $clr-secondary;
+        }
+    }
+    // &--danger{
+    //     background-color: $danger-color;
+    //     &:hover{
+    //         background-color: darken($danger-color, 10);
+    //     }
+    // }
+    
+}

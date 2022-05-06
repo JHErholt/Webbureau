@@ -1,0 +1,32 @@
+/* 
+        <label for="searchbar" class="input input--square">
+            <span class="fas fa-search"></span>
+            <input class="input__text  validate" id="searchbar" type="text" placeholder="Write here">
+        </label>
+*/ 
+
+.input{
+    display: inline-block;
+    margin: 1rem 0;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    border: 2px solid darken($clr-primary, 25);
+    color: darken($clr-primary, 10);
+    background-color: white;
+    cursor: text;
+    &::placeholder{
+        color: $clr-primary;
+    }
+    &__text{
+        font-size: 1rem;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+    }
+    &--square{
+        border-radius: 0;
+    }
+}
+    

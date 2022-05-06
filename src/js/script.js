@@ -1,6 +1,5 @@
 
-// Header
-// toggle Burger menu   
+// Toggle Burger menu   
 function toggleMenuIcon(x) {
     x.style.transtiton = '0.4s';
     x.classList.toggle("toggle-menu");
@@ -21,17 +20,18 @@ function toggleDropdown(current) {
     clickedDropdown.classList.toggle('dropdown-active');
 }
 
+// Validate
+document.querySelectorAll(".validate").forEach((ele) => 
+    ele.addEventListener("input", validate)
+);
+function validate(e) {
+    let regex = /[^\d\w\sæåø?!-]+/gi;
+    e = e || event;
+    let initialValue = e.target.value;
+    e.target.value = e.target.value.replaceAll(regex, "");
+    if (e.target.value != initialValue) {
+        e.target.classList.add("input--danger");
+        setTimeout((e) => (e.target.classList.remove("input--danger")), 300, e);
+    }
+}
 
-
-
-
-// MAIL
-// function sendEmail ( _name, _email, _message) {
-
-// }
-// function getValues(){
-//     let _name = document.querySelector('#name');
-//     let _email = document.querySelector('#email');
-//     let _message = document.querySelector('#message');
-//     sendEmail(_name, _email, _message);
-// };
