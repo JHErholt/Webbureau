@@ -3,9 +3,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: $offset-medium;
 }
-.member-container{
-    padding: $offset-small;
-}
+
 .team-snippet{
     border-radius: 50px 50px 0 0 ;
     flex: 0 0 33.33%;
@@ -32,17 +30,13 @@
 
 }
 @media only screen and (min-width: 767px) {
-    .member-container{
-        padding: $offset-medium;
-    }
+
     .team_snippet-container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media only screen and (min-width: 992px) {
-    .member-container{
-        padding: $offset-large;
-    }
+
     .team_snippet-container{
         grid-template-columns: repeat(3, 1fr);
     }

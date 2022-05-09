@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Spartan&family=Staatliches&display=swap');
-@import 'abstracts/variables';
-@import 'reset';
-@import 'universal';
-@import 'banner';
-@import 'team';
-@import 'blog';
-
 // 1: Abstracts
 @import "abstracts/variables";
 // 2: Base
 @import "base/base", "base/fonts", "base/helper", "base/typography";
 // 3: Components
-@import "components/button", "components/input";
+@import "components/button", "components/input", "components/blog-snippet", "components/team-snippet", "components/banner", "components/modal";
 // 4: Layout
 @import "layout/header", "layout/main", "layout/footer";
 // 5: Page
+

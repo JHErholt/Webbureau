@@ -44,3 +44,66 @@
 .background-1{
     background-color: darken($clr-neutral, 5);
 }
+
+
+
+
+.link-active{
+    text-decoration: underline !important;
+    color: $clr-primary !important;
+}
+
+.offset{
+    padding: $offset-large;
+}
+.less{
+    .offset{
+        padding: $offset-medium;
+    }
+}
+.lesser{
+    .offset{
+        padding: $offset-small;
+    }
+}
+.least{
+    .offset{
+        padding: $offset-x-small;
+    }
+}
+
+.flex-group{
+    @extend .flex;
+    flex-direction: column;
+    .text-container{
+        width: 60%;
+    }
+    .image-container{
+        width: 40%;
+    }
+}
+.flex-text{
+    @extend .flex-group;
+    b{
+        padding: $offset-small;
+        width: 25%;
+    }
+}
+.half-width{
+    width: 50%;
+}
+.block{
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
+@media only screen and (min-width: 992px) {
+    .flex-group{
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    
+}

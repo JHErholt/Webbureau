@@ -14,7 +14,7 @@
     &--square{
         border-radius: 0;
     }
-    &--primary{
+    &--primary-border{
         color: $clr-primary;
         border: solid 2px $clr-primary;
         &:hover{
@@ -22,7 +22,7 @@
             background-color: $clr-primary;
         }
     }
-    &--secondary{
+    &--secondary-border{
         color: $clr-secondary;
         border: solid 2px $clr-secondary;
         &:hover{
@@ -30,6 +30,38 @@
             background-color: $clr-secondary;
         }
     }
+
+    &--primary-solid{
+        color: white;
+        background-color: $clr-primary;
+        &:hover{
+            background-color: darken($clr-primary, 5);
+        }
+    }
+
+    &--secondary-solid{
+        color: white;
+        background-color: $clr-secondary;
+        &:hover{
+            background-color: darken($clr-secondary, 5);
+        }
+    }
+
+    &--confirm{
+        color: white;
+        background-color: green;
+        &:hover{
+            background-color: darken(green, 5);
+        }
+    }
+    &--danger{
+        color: white;
+        background-color: indianred;
+        &:hover{
+            background-color: darken(indianred, 5);
+        }
+    }
+
     // &--danger{
     //     background-color: $danger-color;
     //     &:hover{

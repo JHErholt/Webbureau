@@ -3,7 +3,7 @@
 function toggleMenuIcon(x) {
     x.style.transtiton = '0.4s';
     x.classList.toggle("toggle-menu");
-    document.querySelector("nav").classList.toggle("visible-block");
+    document.querySelector("nav").classList.toggle("block");
     document.querySelector("header").classList.toggle("activated");
 }
 function toggleDropdown(current) {
@@ -33,5 +33,9 @@ function validate(e) {
         e.target.classList.add("input--danger");
         setTimeout((e) => (e.target.classList.remove("input--danger")), 300, e);
     }
-}
+};
 
+function openBlogPost(e){
+    e = e || event;
+    window.location.href = e.target.value;
+};

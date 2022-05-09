@@ -1,5 +1,4 @@
 .snippet-container{
-    @extend .link;
     padding: $offset-medium;
     margin: $offset-large $offset-medium;
     border-left: $clr-secondary solid 15px;
@@ -21,11 +20,18 @@
     }
 }
 .snippet-author-container{
-    @extend .flex-group
+    display: flex;
+    flex-direction: column;
 }
 .snippet-image{
     width: 50px;
 }
 .snippet-author{
     padding-left: $offset-x-small;
+}
+
+@media only screen and (min-width: 992px) {
+    .snippet-author-container{
+        flex-direction: row;
+    }
 }
